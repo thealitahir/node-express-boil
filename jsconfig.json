@@ -1,0 +1,37 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "es2020",
+    "checkJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "#config": ["./src/config"],
+      "#controllers/*": ["./src/controllers/*.controller"],
+      "#enums/*": ["./src/enums/*.enum"],
+      "#errors/*": ["./src/errors/*.error"],
+      "#lib/*": ["./src/lib/*"],
+      "#middlewares/*": ["./src/middlewares/*.middleware"],
+      "#models/*": ["./src/models/*.model"],
+      "#routes/*": ["./src/routes/*.route"],
+      "#services/*": ["./src/services/*.service"],
+      "#validations/*": ["./src/validations/*.validation]"]
+    }
+  },
+  "typeAcquisition": {
+    "exclude": [
+      "agent-base",
+      "socks-proxy-agent",
+      "defer-to-connect",
+      "degenerator",
+      "express-validation",
+      "fast-safe-stringify",
+      "file-uri-to-path",
+      "https-proxy-agent",
+      "source-map",
+      "tsconfig-paths"
+    ]
+  }
+}
